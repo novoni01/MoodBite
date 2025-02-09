@@ -1,0 +1,90 @@
+/* General Button Styles */
+button {
+    padding: 12px 24px;
+    font-size: 1.1em;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 5px;
+  }
+  
+  /* Styles for the 'Yes, tell me my mood options' button */
+  button:first-of-type {
+    background-color: #4caf50; /* Green for the request button */
+    color: white;
+    text-transform: capitalize;
+  }
+  
+  button:first-of-type:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+  }
+  
+  button:first-of-type:active {
+    transform: scale(0.98);
+    background-color: #388e3c;
+  }
+  
+  button:first-of-type:focus {
+    outline: 2px solid #535bf2;
+  }
+  
+  /* Specific Style for 'Happy' button */
+  button:nth-of-type(1) {
+    background-color: #ffeb3b; /* Yellow */
+    color: #333;
+  }
+  
+  button:nth-of-type(1):hover {
+    background-color: #fdd835; /* Darker Yellow on hover */
+    transform: scale(1.05);
+  }
+  
+  button:nth-of-type(1):active {
+    background-color: #fbc02d; /* Even darker yellow on click */
+    transform: scale(0.98);
+  }
+  
+  /* General Styles for other mood buttons */
+  button:not(:first-of-type) {
+    background-color: #1a1a1a;
+    color: white;
+  }
+  
+  button:not(:first-of-type):hover {
+    background-color: #646cff;
+    transform: scale(1.05);
+  }
+  
+  button:not(:first-of-type):active {
+    transform: scale(0.98);
+    background-color: #535bf2;
+  }
+  
+  button:not(:first-of-type):focus {
+    outline: 2px solid #535bf2;
+  }
+  
+  /* Additional layout adjustments */
+  .mood-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
